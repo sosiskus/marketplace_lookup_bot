@@ -27,7 +27,7 @@ type Item struct {
 }
 
 func (i Item) Equals(other Item) bool {
-	return i.title == other.title && i.price == other.price && i.link == other.link
+	return i.link == other.link
 }
 
 func (i Item) ToString() string {
