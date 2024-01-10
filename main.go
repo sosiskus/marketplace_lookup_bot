@@ -186,6 +186,11 @@ func ssTask(bot *bt.Bot) {
 					fmt.Println(err)
 				}
 			}
+		} else {
+			_, err := bot.AdvancedMode().ASendMessage(chatID, "Nothing new!", "", 0, false, false, nil, true, false, nil)
+			if err != nil {
+				fmt.Println(err)
+			}
 		}
 
 		time.Sleep(5 * time.Minute)
