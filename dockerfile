@@ -6,7 +6,7 @@ WORKDIR /app
 # Download dependencies
 COPY ./go.mod ./
 COPY ./go.sum ./
-COPY ./config.json ./
+COPY ./configs.json ./
 RUN go mod download
 COPY *.go ./
 
